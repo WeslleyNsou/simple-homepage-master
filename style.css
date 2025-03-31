@@ -191,6 +191,7 @@ button#get-live-demo{
     }
     #container-img{
         height: 85vh;
+        background-image: url('resources/hero-image-simple-homepage.png');
     }
     h1{
         font-size: 3.75rem;
