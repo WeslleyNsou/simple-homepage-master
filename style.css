@@ -101,7 +101,7 @@ p#destaque{
     display: flex;
     justify-content: space-evenly;
 }
-button#get-started{
+#get-started{
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1rem;
@@ -112,13 +112,12 @@ button#get-started{
     border: none;
     border-radius: 10px;
 }
-button#get-live-demo{
+#get-live-demo{
     font-weight: bolder;
     font-size: 1rem;
     color: var(--azul);
 
     margin: 10px 20px;
-    background-color: white;
     border: none;
     border-bottom:solid #2A4DD0;
 }
@@ -141,6 +140,29 @@ button#get-live-demo{
 h1.dark, a.dark, p.dark, h2.dark, p.dark#destaque{
     color: var(--branco);
 }
+body.dark{
+    background-color: var(--preto);
+}
+#get-live-demo.dark{
+    color: var(--branco);
+    border-bottom:solid #F2F9FE;
+
+}
+
+#button-tema.dark{
+    background-color: var(--cinza);  
+}
+#button-tema.dark > #lua{
+    border-radius: 50%;
+    background-color: var(--branco);
+}
+#button-tema.dark > #sol{
+    margin-left: 5px;
+    border-radius: 50%;
+    color: var(--branco);
+    background-color: var(--cinza);
+}
+
  /*Media Query*/
 @media screen and (min-width:768px ) and (max-width:1024px) {
     h1{
