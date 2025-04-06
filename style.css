@@ -23,14 +23,12 @@ header{
     justify-content: space-between;
 
 }
-nav{
+nav{ 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row-reverse;
     margin-right: 20px;
 
     width: 70vw;
-
 }
 
 /*Botao hamburger*/
@@ -50,25 +48,40 @@ nav{
     display: none;
 }
 /*Button humburguer active*/
-.active{/*Frente*/
+main{
+    position: absolute;
+    height: 90vh;
+
+}
+.frente{/*Frente*/
+    display: flex;
+
     background-color: var(--azul);
 
     margin: 0px;
-    height: 100vh;
+    height: 99vh;
+    width: 70vw;
 
     position: relative;
-    z-index: 1;
-}
-main{/*Fundo*/
-    position: relative;
     z-index: 2;
-    top: -100%;
+    top: -40px;
+    left: 30%; /*Esta criando uma barra de rolagem lateral*/
 }
+.atras{/*Atras*/
+    background-color: yellow;
+    position: relative;
+    z-index: 1;
+    top: -100vh;
+}
+
 a{
     padding: 5px;
     font-weight: bold;
     text-decoration: none;
     color: var(--preto);
+}
+ul{
+    display: none;
 }
 ul > a:hover{
     color: var(--azul);

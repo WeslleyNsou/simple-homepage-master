@@ -1,7 +1,9 @@
 var button = document.getElementById('button-hamburguer')
 
 button.addEventListener('click', function() {
-    var nav = document.getElementById('nav')
+    var menu = document.getElementById('container-menu')
+    var content = document.getElementById('container-content')
 
-    nav.classList.toggle('active')
+    menu.classList.toggle('frente')
+    content.classList.toggle('atras')
 })
